@@ -6,7 +6,7 @@ This allows to have the issue appear in the changelog of the next regular versio
 
 ## Installation
 
-As usual, copy the plugin files to a subfolder called "HotfixVersionSupport" of your mantis directory. Enabled the plugin in Mantis's Plugin management page.
+As usual, copy the plugin folder HotfixVersionSupport to your mantis installation's plugin directory. Enable the plugin in Mantis's Plugin management page.
 
 You have to create two custom fields of type enumeration, *Target hotfix* and *Fixed in hotfix*. Their value has to be set to ´´´=hotfix´versions´´´ (which allows us to provide teh values by a custom function). The two fields need to be assigned to all project you want to track hotfix versions for.
 
