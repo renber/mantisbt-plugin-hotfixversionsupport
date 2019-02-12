@@ -1,0 +1,25 @@
+<?php
+
+$s_plugin_HotfixVersionSupport_title = 'HotFix-Versionen';
+$s_plugin_HotfixVersionSupport_description = 'Erlaubt die Verwaltung von Hotfixversionen zusätzlich zu den normalen Release-versionen. Fügt die Seite HotFix-Versionen zur Sidebar hinzu, die Hotfixversionen inkl. zugeordneter Tickets zeigt.';
+
+$s_plugin_HotfixVersionSupport_general_config = 'HotFix-Versionen: Allgemeine Konfiguration';
+$s_plugin_HotfixVersionSupport_project_config = 'HotFix-Versionen: Projektkonfiguration';
+
+$s_plugin_HotfixVersionSupport_sidebar_title = 'Hotfixversionen';
+$s_plugin_HotfixVersionSupport_page_title = 'Hotfixversionen';
+
+$s_plugin_HotfixVersionSupport_project_unsupported = 'Dieses Projekt unterstützt keine Hotfixverwaltung';
+
+$s_plugin_HotfixVersionSupport_no_hotfixes_available_manager = 'Keine Hotfixinformationen verfügbar. Einträge werden erst angezeigt wenn in Projekten Hotfix-Versionen konfiguriert sind, und Einträge mit festgelegtem Wert für "Zielversion Hotfix" oder "Behoben in Hotfix" vorhanden sind.';
+$s_plugin_HotfixVersionSupport_no_hotfixes_available = 'Keine Hotfixinformationen verfügbar.';
+
+$s_plugin_HotfixVersionSupport_hotfixversion_values = 'Werte für Hotfixversion';
+$s_plugin_HotfixVersionSupport_cf_target_hotfix = "Benutzerdefiniertes Feld 'Zielversion Hotfix'";
+$s_plugin_HotfixVersionSupport_cf_fixed_in_hotfix = "Benutzerdefiniertes Feld 'Behoben in Hotfix'";
+
+$s_plugin_HotfixVersionSupport_project_add = 'Projekt hinzufügen';
+$s_plugin_HotfixVersionSupport_project_remove = 'Projekt entfernen';
+
+$s_plugin_HotfixVersionSupport_action_update = 'Speichern';
+$s_plugin_HotfixVersionSupport_action_add = 'Hinzufügen';

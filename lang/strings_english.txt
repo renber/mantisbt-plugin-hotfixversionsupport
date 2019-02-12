@@ -1,0 +1,26 @@
+<?php
+
+$s_plugin_HotfixVersionSupport_title = 'HotFix version support';
+$s_plugin_HotfixVersionSupport_description = 'Enables management of hotfix versions in addition to the regular release versions supported by Mantis. Adds the page Hotfixes to the sidebar which shows hotfix versions and corresponding tickets.';
+
+$s_plugin_HotfixVersionSupport_general_config = 'HotFix version support: General configuration';
+$s_plugin_HotfixVersionSupport_project_config = 'HotFix version support: Project configuration';
+
+$s_plugin_HotfixVersionSupport_sidebar_title = 'Hotfixes';
+$s_plugin_HotfixVersionSupport_page_title = 'Hotfixes';
+
+$s_plugin_HotfixVersionSupport_project_unsupported = 'This project does not support hotfixes';
+
+$s_plugin_HotfixVersionSupport_no_hotfixes_available_manager = 'No hotfix information available.
+Entries will only be shown if hotfix versions have been created for this project and issues exist which have been assigned a value to "Target hotfix" or "Fixed in hotfix"';
+$s_plugin_HotfixVersionSupport_no_hotfixes_available = 'No hotfix information available.';
+
+$s_plugin_HotfixVersionSupport_hotfixversion_values = 'Values for hotfix versions';
+$s_plugin_HotfixVersionSupport_cf_target_hotfix = "Custom field 'Target hotfix'";
+$s_plugin_HotfixVersionSupport_cf_fixed_in_hotfix = "Custom field 'Fixed in hotfix'";
+
+$s_plugin_HotfixVersionSupport_project_add = 'Add project';
+$s_plugin_HotfixVersionSupport_project_remove = 'Remove project';
+
+$s_plugin_HotfixVersionSupport_action_update = 'Update';
+$s_plugin_HotfixVersionSupport_action_add = 'Add';
