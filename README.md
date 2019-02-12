@@ -8,13 +8,13 @@ This allows to have the issue appear in the changelog of the next regular versio
 
 ## Usage
 
-For supported projects the sidebar entry *Hotfixes* will be available which navigates to the hotfix overview page. There all hotfix versions which have been associated with tickets are shown in a Roadmap/Changelog like list. Currently the versions are sorted naturally (by using PHP's ```natsort```´) no dates can be specified. For each hotfix versions, issues which have either *Target hotfix*, *Fixed in hotfix* or both set to the corresponding version are listed. Issues which have a value for *Fixed in hotfix* are considered completed for the hotfix (i.e. striked out), independent of the actual issues status value.
+For supported projects the sidebar entry *Hotfixes* will be available which navigates to the hotfix overview page. There all hotfix versions which have been associated with tickets are shown in a Roadmap/Changelog like list. Currently the versions are sorted naturally (by using PHP's ```natsort```) no dates can be specified. For each hotfix versions, issues which have either *Target hotfix*, *Fixed in hotfix* or both set to the corresponding version are listed. Issues which have a value for *Fixed in hotfix* are considered completed for the hotfix (i.e. striked out), independent of the actual issues status value.
 
 ## Installation
 
 As usual, copy the plugin folder HotfixVersionSupport to your mantis installation's plugin directory. Enable the plugin in Mantis's Plugin management page.
 
-You have to create two custom fields of type enumeration, *Target hotfix* and *Fixed in hotfix*. Their value has to be set to ```=hotfix´versions``` (which allows us to provide teh values by a custom function). The two fields need to be assigned to all project you want to track hotfix versions for.
+You have to create two custom fields of type enumeration, *Target hotfix* and *Fixed in hotfix*. Their value has to be set to ```=hotfixversions``` (which allows to provide the values by a custom function of this name). The two fields need to be assigned to all project you want to track hotfix versions for.
 
 In order to have the values of these fields populated you have to include the function ```custom_function_override_enum_hotfixversions``` contained in *custom_functions_inc.php* into you Mantis installation's *config/custom_functions_inc.php* file. If you do not have a custom_functions_inc.php file yet, you may just copy the provided one to your conf folder.
 
