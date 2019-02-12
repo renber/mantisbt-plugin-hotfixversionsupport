@@ -6,6 +6,10 @@ This allows to have the issue appear in the changelog of the next regular versio
 
 ![Hotfix overview page provided by the plugin](/img/hotfix_overview.png?raw=true)
 
+## Usage
+
+For supported projects the sidebar entry *Hotfixes* will be available which navigates to the hotfix overview page. There all hotfix versions which have been associated with tickets are shown in a Roadmap/Changelog like list. Currently the versions are sorted naturally (by using PHP's ´´´natsort´´´), no dates can be specified. For each hotfix versions, issues which have either *Target hotfix*, *Fixed in hotfix* or both set to the corresponding version are listed. Issues which have a value for *Fixed in hotfix* are considered completed for the hotfix (i.e. striked out), independent of the actual issues status value.
+
 ## Installation
 
 As usual, copy the plugin folder HotfixVersionSupport to your mantis installation's plugin directory. Enable the plugin in Mantis's Plugin management page.
@@ -21,6 +25,4 @@ In the configuration you have to select the two previously created custom fields
 Add each project you want to have hotfix support for to the project configuration and type the enumeration value for the selectable hotfix versions into the provided text field. This uses the regular custom field enumeration style, i.e. *Item1|Item2|Item3*.
 So, to allow users to select the Hotfix versions HF1 and HF2 and the empty entry (=no hotfix association) you would type *|HF1|HF2*.
 
-## Usage
-
-For supported projects the sidebar entry *Hotfixes* will be available which navigates to the hotfix overview page. There all hotfix versions which have been associated with tickets are shown in a Roadmap/Changelog like list. Currently the versions are sorted naturally (by using PHP's ´´´natsort´´´), no dates can be specified. For each hotfix versions, issues which have either *Target hotfix*, *Fixed in hotfix* or both set to the corresponding version are listed. Issues which have a value for *Fixed in hotfix* are considered completed for the hotfix (i.e. striked out), independent of the actual issues status value.
+![Configuration page of the plugin](/img/config_page.png?raw=true)
