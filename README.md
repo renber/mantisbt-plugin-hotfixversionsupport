@@ -4,6 +4,8 @@ A plugin for the Mantis BugTracker which allows to assign tickets a HotFix versi
 It works by using two (user-definable) custom fields to assign tickets a *target hotfix version* and a *fixed in hotfix* marker (like Mantis's original *target version* and *fixed in version*). This means that issues can be assigned to two versions at once, a regular version and a hotfix version. 
 This allows to have the issue appear in the changelog of the next regular version where it is fixed and keep track of hotfixes which a deployed before the next regular version and already contain a fix/change for the given issue.
 
+![Hotfix overview page provided by the plugin](/img/hotfix_overview.png?raw=true)
+
 ## Installation
 
 As usual, copy the plugin folder HotfixVersionSupport to your mantis installation's plugin directory. Enable the plugin in Mantis's Plugin management page.
