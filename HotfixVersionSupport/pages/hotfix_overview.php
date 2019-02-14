@@ -324,7 +324,11 @@ if (!custom_field_is_linked($custom_field_id_target_hotfix, $t_project_id) && !c
 		}
 		
 		// progress
-		$t_progress = count($all_fixed_ids) * 100 / count($all_bug_ids);
+		if (count($all_bug_ids) == 0) {
+			$t_progress = 0;
+		} else {
+			$t_progress = floor(count($all_fixed_ids) * 100 / count($all_bug_ids));
+		}		
 		
 		echo '<div class="space-4"></div>';
 		echo '<div class="col-md-7 col-xs-12 no-padding">';
