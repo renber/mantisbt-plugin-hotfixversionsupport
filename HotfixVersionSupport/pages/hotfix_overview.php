@@ -185,7 +185,8 @@ function hotfixview_print_issue( $p_issue_id, $is_fixed_in_hotfix, $p_issue_leve
 	$t_status_title = string_attribute( get_enum_element( 'status', bug_get_field( $t_bug->id, 'status' ), $t_bug->project_id ) );;
 
 	echo utf8_str_pad( '', $p_issue_level * 36, '&#160;' );
-	echo '<i class="fa fa-square fa-status-box ' . $status_label . '" title="' . $t_status_title . '"></i> ';
+	# since the status is not related to the hotfix, do not show it
+	#echo '<i class="fa fa-square fa-status-box ' . $status_label . '" title="' . $t_status_title . '"></i> ';
 	echo string_get_bug_view_link( $p_issue_id, false );
 	echo ': <span class="label label-light">', $t_category, '</span> ', $t_strike_start, string_display_line_links( $t_bug->summary ), $t_strike_end;
 	if( $t_bug->handler_id > 0
